@@ -19,6 +19,7 @@ class Student{
     }
 }
 public class StudentCollApp {
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Vector v = new Vector();

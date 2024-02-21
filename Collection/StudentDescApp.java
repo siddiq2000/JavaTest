@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.util.Vector;
 
 public class StudentDescApp {
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Vector v = new Vector();
@@ -36,5 +37,6 @@ public class StudentDescApp {
             Student s = (Student)o;
             System.out.println(s.getId()+"\t"+s.getName()+"\t"+s.getPer());
         }
+        sc.close();
     }
 }
