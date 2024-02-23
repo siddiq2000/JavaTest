@@ -17,6 +17,7 @@ public class OnlineExamApp {
             System.out.println("4.View Question Exam wise");
             System.out.println("5.Attempt exam as Student");
             System.out.println("6.Delete Question");
+            System.out.println("7.Update Question");
             System.out.println("11.Exit");
             System.out.println("Enter Choice");
             int choice = sc.nextInt(); sc.nextLine();
@@ -134,6 +135,8 @@ public class OnlineExamApp {
                         }
                     } else {System.out.println("Question bank not present");}
                     break;
+                    case 7: 
+                        break;
                 case 11:
                     System.exit(0);
                 default:
