@@ -13,7 +13,7 @@ public class FreqIntApp {
     public static void FreqNum(int num) {
         int[] freq = new int[10]; // Array to store frequencies of digits 0-9
         // for(int i=0; i<freq.length; i++){
-        //     System.out.println("Arrray "+freq[i]);
+        // System.out.println("Arrray "+freq[i]);
         // }
 
         // Count frequencies efficiently using a single loop

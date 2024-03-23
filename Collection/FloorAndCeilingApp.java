@@ -4,9 +4,9 @@ public class FloorAndCeilingApp {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int[] arr = new int[5];
-    for(int i=0; i<arr.length; i++) {
-        arr[i] = sc.nextInt();
-    } 
+    for (int i = 0; i < arr.length; i++) {
+      arr[i] = sc.nextInt();
+    }
     int n = arr.length;
     int x = 7;
     sc.close();
@@ -34,6 +34,5 @@ public class FloorAndCeilingApp {
     result[0] = (high == -1) ? -1 : arr[high];
     result[1] = (low == arr.length) ? -1 : arr[low];
     return result;
-    }
+  }
 }
-

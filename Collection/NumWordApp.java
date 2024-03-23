@@ -3,8 +3,8 @@ import java.util.*;
 public class NumWordApp {
     public static void Convert(int n) {
         // Array to store digit words in reverse order
-        String[] words = new String[]{"Zero", "One", "Two", "Three", "Four", "Five",
-                                     "Six", "Seven", "Eight", "Nine"};
+        String[] words = new String[] { "Zero", "One", "Two", "Three", "Four", "Five",
+                "Six", "Seven", "Eight", "Nine" };
 
         // Stack to store words in correct order
         Stack<String> wordStack = new Stack<>();
@@ -22,6 +22,7 @@ public class NumWordApp {
         }
         System.out.println(); // Add newline after printing
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number:");

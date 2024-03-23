@@ -23,6 +23,8 @@ public class LibraryApp {
             System.out.println("6.Add student");
             System.out.println("7.Issue book to student");
             System.out.println("8.Show stock not issued");
+            System.out.println("9.Show Student wise book/s");
+            System.out.println("10.Delete Book/s by Author");
             System.out.println("11.Exit");
             System.out.println("Enter choice");
             int choice = sc.nextInt();
@@ -158,14 +160,20 @@ public class LibraryApp {
                             ArrayList bk = new ArrayList<>();
                             student = (StudentModel) sl.get(i);
                             bk = student.getBook();
-                            for (int j = 0; j < bk.size(); j++) {
-                                book = (BookModel) bk.get(i);
-                                System.out.println(
-                                        book.getId() + "\t" + book.getName() + "\t" + book.getPrice() + "\t"
-                                                + book.getAuthor() + "\t" + book.getPublication() + "\t"
-                                                + book.getCategory() + "\t"
-                                                + book.isStatus());
+                            System.out.println("Student: "+student.getName());
+                            System.out.println("_____________");
+                            if(bk.size()>0) {
+                                for (int j = 0; j < bk.size(); j++) {
+                                    BookModel book1 = (BookModel) bk.get(j);
+                                    System.out.println(
+                                            book1.getId() + "\t" + book1.getName() + "\t" + book1.getPrice() + "\t"
+                                                    + book1.getAuthor() + "\t" + book1.getPublication() + "\t"
+                                                    + book1.getCategory() + "\t"
+                                                    + book1.isStatus());
+                                }
                             }
+                            else System.out.println("No Book Alloted to "+student.getName());
+                            System.out.println("_____________");
                         }
                     } else
                         System.out.println("No students found");
